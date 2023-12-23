@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/martynenkovDm/education/static/css/main.86bee891.css",
-    "main.js": "/martynenkovDm/education/static/js/main.25a11781.js",
-    "index.html": "/martynenkovDm/education/index.html",
-    "main.86bee891.css.map": "/martynenkovDm/education/static/css/main.86bee891.css.map",
-    "main.25a11781.js.map": "/martynenkovDm/education/static/js/main.25a11781.js.map"
+    "main.css": "/education/static/css/main.86bee891.css",
+    "main.js": "/education/static/js/main.e1b30444.js",
+    "index.html": "/education/index.html",
+    "main.86bee891.css.map": "/education/static/css/main.86bee891.css.map",
+    "main.e1b30444.js.map": "/education/static/js/main.e1b30444.js.map"
   },
   "entrypoints": [
     "static/css/main.86bee891.css",
-    "static/js/main.25a11781.js"
+    "static/js/main.e1b30444.js"
   ]
 }
