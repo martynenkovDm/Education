@@ -20,26 +20,15 @@ export const Header = () => {
         </Link>
       </HomeWrap>
       <LinkWrap>
-        <Link1 href="#" target="_blank">
-          Матеріли
-        </Link1>
-        <Link1 href="#" target="_blank">
-          Тести
-        </Link1>
-        <Link1 href="#" target="_blank">
-          Блоги
-        </Link1>
-        <Link1 href="#" target="_blank">
-          Курси
-        </Link1>
+        <Link1 href="/src/components/App.jsx">Матеріли</Link1>
+        <Link1 href="/src/components/App1.jsx">Тести</Link1>
+        <Link1 href="#">Блоги</Link1>
+        <Link1 href="#">Курси</Link1>
       </LinkWrap>
       <LinkWrap>
         <Link href="" target="_blank">
           Login
         </Link>
-        {/* <Link href="https://www.rshu.edu.ua/" target="_blank">
-          РДГУ
-        </Link> */}
       </LinkWrap>
     </SectionWrapper>
   );

@@ -9,41 +9,53 @@ import {
   ReviewsItem,
   ReviewsImg,
 } from './ThirdSection.styled';
-
+import img1 from 'img/nazar-babenko-x1.jpeg';
+import img2 from 'img/olena-kampusch-x1.jpeg';
+import img3 from 'img/victoria-dobrzhanska-x1.jpeg';
 export const ThirdSection = ({ title }) => {
+  const onShowList = id => {
+    const find = document.getElementById(id);
+    if (find.classList.contains('hidden')) {
+      find.classList.remove('hidden');
+    } else {
+      find.classList.add('hidden');
+    }
+  };
   return (
     <SectionWrap>
       <Container1>
         <Title> Відгуки</Title>
         <ReviewsList>
           <ReviewsItem>
-            <ReviewsImg
-              src="/src/img/victoria-dobrzhanska-x1.webp"
-              alt="victoria-dobrzhanska"
-            />
+            <ReviewsImg src={img3} alt="victoria-dobrzhanska" />
             <SubTitle>Вікторія Доброжанська</SubTitle>
             <Text>
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
+              Ресурс довідкових матеріалів дуже допоміг мені підготуватися до
+              іспитів з інформатики. Мені сподобалася доступність інформації та
+              можливість самостійно перевіряти свої знання за допомогою тестів.
+              Це чудове доповнення до шкільних уроків!
             </Text>
           </ReviewsItem>
           <ReviewsItem>
-            <ReviewsImg src="img/nazar-babenko-x1.webp" alt="nazar-babenko" />
+            <ReviewsImg src={img1} alt="nazar-babenko" />
             <SubTitle>Назар Бабенко</SubTitle>
             <Text>
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
+              Я дуже задоволений цим ресурсом. Він дозволяє легко інтегрувати
+              додаткові матеріали у навчальний процес та забезпечує учням доступ
+              до актуальної інформації. Зручний інтерфейс та можливість
+              адаптації під різні навчальні потреби роблять його незамінним
+              інструментом для вчителів.
             </Text>
           </ReviewsItem>
           <ReviewsItem>
-            <ReviewsImg
-              src="/src/img/olena-kampusch-x1.webp"
-              alt="olena-kampusch"
-            />
+            <ReviewsImg src={img2} alt="olena-kampusch" />
             <SubTitle>Олена Кампуш</SubTitle>
             <Text>
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
+              Цей ресурс став незамінним помічником у вивченні інформатики.
+              Завдяки інтерактивним завданням та зрозумілим поясненням я змогла
+              швидше засвоювати матеріал та підвищити свої оцінки. Особливо
+              зручно, що можна працювати з матеріалами навіть зі смартфону під
+              час поїздок.
             </Text>
           </ReviewsItem>
         </ReviewsList>

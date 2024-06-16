@@ -8,8 +8,8 @@ export const SectionWrap = styled.section`
   border-radius: 20px;
   position: relative;
   width: 90%;
+  margin-top: 91px;
   min-height: 520px;
-  margin-top: 61px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)

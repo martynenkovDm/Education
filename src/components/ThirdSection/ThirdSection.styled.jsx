@@ -5,12 +5,16 @@ export const SectionWrap = styled.section`
 `;
 export const Container1 = styled.div`
   max-width: 1200px;
-  padding: 0 32px;
+  padding: 60px 32px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const Title = styled.h2`
   margin-bottom: 91px;
   font-size: 24px;
+  color: black;
 `;
 export const SubTitle = styled.h3`
   margin-top: 54px;
@@ -30,7 +34,7 @@ export const ReviewsList = styled.ul`
 export const ReviewsItem = styled.li`
   position: relative;
   width: 360px;
-  height: 200px;
+  height: 270px;
   background: white;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
