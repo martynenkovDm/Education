@@ -1,31 +1,42 @@
 import styled from 'styled-components';
 
 export const SectionWrap = styled.section`
+  margin-top: 60px;
+  background-color: #1e1823;
+`;
+export const Container1 = styled.div`
+  padding: 50px;
+`;
+export const Advantageslist = styled.ul`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: top;
-  width: 100%;
-  min-height: 200px;
-  background-color: #f4f4fd;
-  box-shadow: -1px -1px 1px -1px, 1px 1px 1px #babecc;
-  padding-top: 50px;
+  flex-wrap: nowrap;
+  gap: 70px;
+  padding-right: 0;
+  line-height: 1.22;
+`;
+export const AdvantagesItem = styled.li`
+  width: calc((100% - 140px) / 3);
+  position: relative;
+  padding-right: 18px;
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1px;
+    height: 124px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
 `;
 
-export const Title = styled.h2`
-  text-align: center;
-  color: ${props => props.theme.colors.black};
-  font-size: 28px;
-  font-family: ${props => props.theme.fonts.body};
-  font-weight: ${props => props.theme.fontWeights.bold};
-  width: auto;
-  letter-spacing: 0.02em;
+export const Title = styled.h3`
+  margin: 22px 0 18px 0;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
 `;
 export const Text = styled.p`
-  padding: 20px 0 40px 0;
-  width: 70%;
-  font-weight: ${props => props.theme.fontWeights.normal};
-  font-family: ${props => props.theme.fonts.monospace};
-  font-size: 16px;
-  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.7);
 `;

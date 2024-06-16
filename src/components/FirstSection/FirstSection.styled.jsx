@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const SectionWrap = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: end;
+  border-radius: 20px;
   position: relative;
-  width: 100%;
+  width: 90%;
   min-height: 520px;
-  margin-top: 55px;
+  margin-top: 61px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -22,10 +23,11 @@ export const SectionWrap = styled.section`
 
 export const Text = styled.h1`
   text-align: center;
+  padding-bottom: 30px;
   color: ${props => props.theme.colors.white};
   font-size: ${props => props.theme.fontSizes.l};
-  font-family: ${props => props.theme.fonts.headings};
+  font-family: ${props => props.theme.fonts.monospace};
   font-weight: ${props => props.theme.fontWeights.bold};
-  width: 63%;
+  max-width: 50%;
   transition: 2000ms;
 `;

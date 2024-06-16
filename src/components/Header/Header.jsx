@@ -5,6 +5,7 @@ import {
   Link,
   Svg,
   Use,
+  Link1,
 } from './Header.styled';
 
 export const Header = () => {
@@ -15,19 +16,30 @@ export const Header = () => {
           <Svg id="icon-home" viewBox="0 0 32 32">
             <Use d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></Use>
           </Svg>
-          Головна сторінка
+          Education
         </Link>
       </HomeWrap>
       <LinkWrap>
-        <Link
-          href="https://mon.gov.ua/ua/osvita/zagalna-serednya-osvita/navchalni-programi/navchalni-programi-dlya-10-11-klasiv"
-          target="_blank"
-        >
-          МОН
+        <Link1 href="#" target="_blank">
+          Матеріли
+        </Link1>
+        <Link1 href="#" target="_blank">
+          Тести
+        </Link1>
+        <Link1 href="#" target="_blank">
+          Блоги
+        </Link1>
+        <Link1 href="#" target="_blank">
+          Курси
+        </Link1>
+      </LinkWrap>
+      <LinkWrap>
+        <Link href="" target="_blank">
+          Login
         </Link>
-        <Link href="https://www.rshu.edu.ua/" target="_blank">
+        {/* <Link href="https://www.rshu.edu.ua/" target="_blank">
           РДГУ
-        </Link>
+        </Link> */}
       </LinkWrap>
     </SectionWrapper>
   );

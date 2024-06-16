@@ -7,9 +7,9 @@ export const SectionWrapper = styled.header`
   align-items: center;
   position: fixed;
   width: 100%;
-  height: 55px;
+  height: 60px;
   z-index: 1;
-  background: #4c57c7;
+  background: white;
   text-shadow: 1px 1px 0 #ffffff;
   box-shadow: -1px -1px 1px #b6b6b6, 1px 1px 4px #babecc;
 `;
@@ -25,19 +25,16 @@ export const Svg = styled.svg`
   height: 25px;
   margin-right: 2px;
   padding-top: 10px;
-  transition: 1000ms;
-  &:hover {
-    fill: white;
-  }
+  transition: 400ms;
 `;
 export const Use = styled.path``;
-export const Link = styled.a`
+export const Link1 = styled.a`
   font-weight: ${props => props.theme.fontWeights.normal};
   font-family: ${props => props.theme.fonts.monospace};
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 0.02em;
   width: 25px;
-  transition: 1000ms;
+  transition: 400ms;
   height: 25px;
   padding-left: 20px;
   text-shadow: none;
@@ -46,11 +43,34 @@ export const Link = styled.a`
     color: black;
   }
   &:hover {
-    color: White;
-    transition: 1000ms;
+    color: blue;
+    transition: 400ms;
   }
   &:hover ${Svg} {
-    fill: White;
-    transition: 1000ms;
+    fill: blue;
+    transition: 400ms;
+  }
+`;
+export const Link = styled.a`
+  font-weight: ${props => props.theme.fontWeights.normal};
+  font-family: ${props => props.theme.fonts.monospace};
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  width: 25px;
+  transition: 400ms;
+  height: 25px;
+  padding-left: 20px;
+  text-shadow: none;
+  color: black;
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: blue;
+    transition: 400ms;
+  }
+  &:hover ${Svg} {
+    fill: blue;
+    transition: 400ms;
   }
 `;
